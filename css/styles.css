@@ -1,0 +1,127 @@
+:root {
+  --secondary-color: #fff;
+}
+
+body,
+html {
+  overflow: hidden;
+}
+
+body.background-img {
+  background: url("/images/background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-size: cover;
+  z-index: 1;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 8px 10px;
+}
+
+button,
+.logo {
+  position: absolute;
+  font-size: 20px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: none;
+  transition: all 500ms ease;
+}
+
+button:hover {
+  background-color: rgb(19, 58, 76);
+}
+
+.header {
+  color: var(--secondary-color);
+  font-size: 55px;
+  text-shadow: #000;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.logo {
+  top: 0;
+  left: 0;
+  margin: 20px 0 0 20px;
+  font-size: 20px;
+  color: var(--secondary-color);
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+.about-btn {
+  top: 0;
+  right: 0;
+  margin: 20px 20px 0 0;
+}
+
+.contact-btn {
+  bottom: 0;
+  left: 0;
+  margin: 0 0 20px 20px;
+}
+
+.see-more-btn {
+  bottom: 0;
+  right: 0;
+  margin: 0 20px 20px 0;
+}
+
+/* Media Queries  */
+
+@media screen and (max-width: 1024px) {
+  .header {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    font-size: 25px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 492px) {
+  .header {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #000;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    font-size: 25px;
+  }
+}
+
+/* Contact Page */
+
+body.contact-img {
+  background-image: url(/images/contact-img.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: 1;
+}
