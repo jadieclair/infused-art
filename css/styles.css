@@ -1,10 +1,11 @@
 :root {
+  --primary-color: #000;
   --secondary-color: #fff;
-}
-
-body,
-html {
-  overflow: hidden;
+  --boarding-color: rgb(247, 247, 247);
+  --btn-background-color: rgb(19, 58, 76);
+  --primary-font: "Roboto Mono", monospace, sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
+  --branding-font: "Dancing Script", cursive, serif;
 }
 
 body.background-img {
@@ -16,9 +17,20 @@ body.background-img {
   text-align: center;
   background-size: cover;
   z-index: 1;
+  overflow: hidden;
 }
 
-a {
+h1 {
+  font-family: var(--primary-font);
+}
+
+p {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+a.page-links {
   color: var(--secondary-color);
   text-decoration: none;
   padding: 8px 10px;
@@ -35,25 +47,36 @@ button,
 }
 
 button:hover {
-  background-color: rgb(19, 58, 76);
+  background-color: var(--btn-background-color);
 }
 
 .header {
   color: var(--secondary-color);
   font-size: 55px;
   text-shadow: #000;
-  font-family: "Roboto Mono", monospace;
+
   font-weight: 600;
   margin-top: 20px;
 }
 
-.logo {
+p.home-logo {
+  position: absolute;
   top: 0;
   left: 0;
   margin: 20px 0 0 20px;
   font-size: 20px;
   color: var(--secondary-color);
-  font-family: "Dancing Script", cursive;
+  font-family: var(--branding-font);
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+a.nav-logo {
+  font-size: 20px;
+  color: var(--secondary-color);
+  font-family: var(--branding-font);
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
@@ -112,6 +135,36 @@ button:hover {
   .header {
     font-size: 25px;
   }
+}
+
+/* About Page */
+
+.image {
+  width: 100vw;
+  max-height: 700px;
+}
+
+.hero {
+  background-color: var(--primary-color);
+}
+
+.about-desc {
+  text-align: left;
+  max-width: 400px;
+  padding: 0 20px;
+}
+
+.internal-box,
+.internal-icons {
+  background-color: var(--boarding-color);
+  margin-top: 10px;
+}
+
+.internal-icons {
+  max-width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
 }
 
 /* Contact Page */
