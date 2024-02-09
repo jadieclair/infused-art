@@ -51,7 +51,7 @@ button a.page-links {
   border-radius: 8px;
   background-color: transparent;
   border: none;
-  transition: all 500ms ease;
+  transition: all 100ms ease-in-out;
 }
 
 button.links:hover {
@@ -304,6 +304,10 @@ a.nav-logo {
 .gallery-container .gallery-img-container:nth-child(2) .row-5,
 .gallery-container .gallery-img-container:nth-child(3) .row-5 {
   max-height: 350px;
+}
+
+nav.active {
+  color: var(--boarding-color);
 }
 
 @media screen and (max-width: 425px) {
