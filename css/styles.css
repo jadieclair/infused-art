@@ -8,6 +8,11 @@
   --branding-font: "Dancing Script", cursive, serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body.background-img {
   background: url("/images/background.png");
   background-repeat: no-repeat;
@@ -305,6 +310,16 @@ a.nav-logo {
   .gallery-title {
     font-size: 25px;
   }
+
+  .gallery-img {
+    max-width: 300px;
+    max-height: 400px;
+  }
+
+  .gallery-img-container {
+    margin: 5px 0 5px 0;
+    padding: 5px;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -316,12 +331,37 @@ a.nav-logo {
 
 /* Contact Page */
 
-body.contact-img {
-  background-image: url(/images/contact-img.jpg);
+h6 {
+  font-size: 22px;
+  color: #000;
+  font-weight: bolder;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-img {
+  background-image: url(/images/contact-background.png);
+  position: fixed;
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  opacity: 0.6;
   z-index: 1;
+}
+
+.fa-solid {
+  margin-right: 5px;
+}
+
+.contact-details {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
 }
