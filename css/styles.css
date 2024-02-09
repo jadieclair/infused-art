@@ -116,6 +116,39 @@ a.nav-logo {
   margin: 0 20px 20px 0;
 }
 
+footer {
+  margin: 20px 0;
+}
+
+.footer-container {
+  max-height: 50px;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  background-color: rgb(144, 144, 144);
+  padding: 60px 0;
+}
+
+.social-links {
+  text-align: left;
+}
+
+footer .social-icons {
+  margin-left: 15px;
+}
+
+footer .footer-logo {
+  font-size: 24px;
+  padding: 10px;
+  margin: 0 auto;
+  text-decoration: underline;
+}
+
+.footer-rights {
+  margin: 0 20px 0 0;
+  font-size: 16px;
+}
+
 @media screen and (max-width: 1024px) {
   .main-title {
     font-size: 30px;
