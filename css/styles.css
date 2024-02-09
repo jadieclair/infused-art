@@ -149,6 +149,11 @@ footer .footer-logo {
   font-size: 16px;
 }
 
+footer .footer-rights .github-link {
+  text-decoration: none;
+  color: rgb(112, 112, 244);
+}
+
 @media screen and (max-width: 1024px) {
   .main-title {
     font-size: 30px;
