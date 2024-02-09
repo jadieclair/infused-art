@@ -313,6 +313,15 @@ h6 {
   .main-title {
     font-size: 30px;
   }
+
+  .about-desc-1,
+  .about-desc-2 {
+    margin-bottom: 0;
+  }
+
+  .contact-link {
+    margin: 20px 0 15px 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
